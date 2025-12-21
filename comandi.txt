@@ -1,0 +1,53 @@
+AMBIENTE VIRTUALE (venv)
+-----------------------
+
+Creare l’ambiente virtuale:
+python -m venv venv
+
+Attivare l’ambiente virtuale:
+venv\Scripts\activate
+
+Disattivare l’ambiente virtuale:
+deactivate
+
+
+COLLEGAMENTO A GITHUB
+---------------------
+
+1. Installare Git (se non già installato)
+
+2. Spostarsi nella cartella del progetto:
+C:\Users\itali\Documents\uni\social\ucraina
+
+3. Inizializzare il repository locale:
+git init
+
+4. Creare il file .gitignore
+
+5. Controllare lo stato dei file:
+git status
+
+6. Aggiungere i file al commit:
+git add .
+
+7. Creare il primo commit:
+git commit -m "Initial project setup: structure and environment"
+
+8. Creare una nuova repository su GitHub, senza aggiungere README, .gitignore o license
+
+9. Collegare la repository remota:
+git remote add origin https://github.com/sabscarpenter/sna-ukraine-war.git
+
+10. Verificare il collegamento:
+git remote -v
+
+11. Controllare lo stato del repository:
+git status
+
+12. Pubblicare i file su GitHub:
+- se il branch locale si chiama "master":
+  git branch -M main
+  git push -u origin main
+
+- altrimenti:
+  git push
