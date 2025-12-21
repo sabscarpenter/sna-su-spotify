@@ -36,7 +36,7 @@ git commit -m "Initial project setup: structure and environment"
 8. Creare una nuova repository su GitHub, senza aggiungere README, .gitignore o license
 
 9. Collegare la repository remota:
-git remote add origin https://github.com/sabscarpenter/sna-ukraine-war.git
+git remote add origin https://github.com/sabscarpenter/sna-su-spotify.git
 
 10. Verificare il collegamento:
 git remote -v

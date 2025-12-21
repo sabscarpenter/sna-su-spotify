@@ -1,0 +1,25 @@
+# Ambiente Virtuale
+venv/
+ENV/
+env/
+
+# Byte-compiled / ottimizzazione (Python)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# File di configurazione sensibili (API Keys)
+config.py
+.env
+
+# File di dati pesanti (per evitare di superare i limiti di GitHub)
+data/*.json
+data/*.csv
+data/*.gexf
+
+# Notebook di Jupyter
+.ipynb_checkpoints
+
+# OS specific
+.DS_Store
+Thumbs.db
