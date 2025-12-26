@@ -1,0 +1,13 @@
+spotify
+-data/
+-report/
+-scripts/
+-venv (ambiente di sviluppo python)/
+-.cache
+-.env (con le chiavi per le api di spotify)
+-.gitignore
+-comandi.txt
+-config.py (sarebbe stato usato al posto del .env)
+-main.py
+-requirements.txt
+-struttura.txt

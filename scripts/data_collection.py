@@ -1,0 +1,35 @@
+import pandas as pd
+import time
+
+def get_artist_info(sp, artist_id):
+    """Recupera info base, popolarità e generi."""
+    artist = sp.artist(artist_id)
+    return {
+        'id': artist['id'],
+        'name': artist['name'],
+        'popularity': artist['popularity'],
+        'genres': artist['genres']
+    }
+
+def get_collaborations(sp, artist_id):
+    """Trova tutti i feat. analizzando gli album dell'artista."""
+    collaborations = []
+    results = sp.artist_albums(artist_id, album_type='album,single', limit=50)
+    albums = results['items']
+    
+    seen_tracks = set()
+
+    for album in albums:
+        time.sleep(0.2)
+        tracks = sp.album_tracks(album['id'])['items']
+        for track in tracks:
+            if track['id'] not in seen_tracks:
+                artists_in_track = [a['id'] for a in track['artists']]
+                # Se c'è più di un artista, è una collaborazione
+                if len(artists_in_track) > 1:
+                    for i in range(len(artists_in_track)):
+                        for j in range(i + 1, len(artists_in_track)):
+                            collaborations.append((artists_in_track[i], artists_in_track[j]))
+                seen_tracks.add(track['id'])
+                
+    return list(set(collaborations)) # Rimuoviamo duplicati

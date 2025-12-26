@@ -1,38 +1,99 @@
+import pandas as pd
+import time
 import os
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
-from dotenv import load_dotenv
+from scripts.utils import get_spotify_client
+from scripts.data_collection import get_artist_info, get_collaborations
 
-load_dotenv()
+MAX_DEPTH = 1
 
-def test_collaborations(artist_name="Marracash"):
-    auth_manager = SpotifyClientCredentials()
-    sp = spotipy.Spotify(auth_manager=auth_manager)
-    
-    # 1. Trova l'artista
-    results = sp.search(q='artist:' + artist_name, type='artist')
-    artist_id = results['artists']['items'][0]['id']
-    print(f"✅ Artista trovato: {artist_name}")
+def load_seeds(filepath):
+    seeds = []
+    if not os.path.exists(filepath):
+        print(f"Errore: il file {filepath} non esiste!")
+        return []
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for line in f:
+            if line.strip():
+                parts = line.split(',')
+                if len(parts) >= 2:
+                    seeds.append(parts[1].strip())
+    return seeds
 
-    # 2. Ottieni gli album/singoli
-    albums = sp.artist_albums(artist_id, album_type='album,single', limit=10)
+def main():
+    sp = get_spotify_client()
+    seeds = load_seeds('seeds.txt')
     
-    collaborators = set()
+    nodes_data = {}
+    edges = []
     
-    print(f"Analizzando le collaborazioni negli ultimi dischi...")
-    for album in albums['items']:
-        # 3. Ottieni le tracce di ogni album
-        tracks = sp.album_tracks(album['id'])
-        for track in tracks['items']:
-            # Se ci sono più artisti nella traccia, c'è un arco (collaborazione)!
-            if len(track['artists']) > 1:
-                names = [a['name'] for a in track['artists']]
-                for name in names:
-                    if name != artist_name:
-                        collaborators.add(name)
-    
-    print(f"✅ Trovati {len(collaborators)} collaboratori unici:")
-    print(list(collaborators)[:10]) # Mostra i primi 10
+    processed_ids = set()
+    current_level_queue = seeds
+
+    print(f"Inizio raccolta dati con PROFONDITÀ: {MAX_DEPTH}")
+
+    for depth in range(MAX_DEPTH):
+        print(f"\n--- ANALISI LIVELLO {depth + 1} ---")
+        next_level_queue = []
+        
+        for artist_id in current_level_queue:
+            if artist_id in processed_ids:
+                continue
+            
+            try:
+                if artist_id not in nodes_data:
+                    info = get_artist_info(sp, artist_id)
+                    info['genres'] = ';'.join(info['genres']) if info['genres'] else ""
+                    nodes_data[artist_id] = info
+
+                collabs = get_collaborations(sp, artist_id)
+                print(f"[{depth+1}] Processato: {nodes_data[artist_id]['name']} ({len(collabs)} feat trovati)")
+                
+                for a, b in collabs:
+                    edges.append({'source': a, 'target': b})
+                    if a not in processed_ids: next_level_queue.append(a)
+                    if b not in processed_ids: next_level_queue.append(b)
+                
+                processed_ids.add(artist_id)
+                time.sleep(1.0)
+                
+            except Exception as e:
+                print(f"Errore con {artist_id}: {e}")
+
+        current_level_queue = list(set(next_level_queue))
+        if not current_level_queue:
+            break
+
+    print("\nFase finale: Recupero profili mancanti...")
+    all_discovered_ids = set()
+    for edge in edges:
+        all_discovered_ids.add(edge['source'])
+        all_discovered_ids.add(edge['target'])
+
+    missing_ids = list(all_discovered_ids - set(nodes_data.keys()))
+    if missing_ids:
+        print(f"Scaricamento dati per {len(missing_ids)} collaboratori esterni...")
+        for i in range(0, len(missing_ids), 50):
+            batch = missing_ids[i:i+50]
+            try:
+                results = sp.artists(batch)
+                for artist in results['artists']:
+                    if artist:
+                        nodes_data[artist['id']] = {
+                            'id': artist['id'],
+                            'name': artist['name'],
+                            'popularity': artist['popularity'],
+                            'genres': ';'.join(artist['genres']) if artist['genres'] else ""
+                        }
+                time.sleep(0.5)
+            except Exception as e:
+                print(f"Errore batch: {e}")
+
+    if not os.path.exists('data'): os.makedirs('data')
+    df_nodes = pd.DataFrame(list(nodes_data.values())).drop_duplicates(subset='id')
+    df_edges = pd.DataFrame(edges).drop_duplicates()
+    df_nodes.to_csv('data/nodes.csv', index=False)
+    df_edges.to_csv('data/edges.csv', index=False)
+    print(f"\nCOMPLETATO: {len(df_nodes)} nodi e {len(df_edges)} archi.")
 
 if __name__ == "__main__":
-    test_collaborations()
+    main()
