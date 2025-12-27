@@ -1,6 +1,7 @@
 import pandas as pd
 import time
 import os
+from collections import Counter
 from scripts.utils import get_spotify_client
 from scripts.data_collection import get_artist_info, get_collaborations
 
@@ -24,7 +25,7 @@ def main():
     seeds = load_seeds('seeds.txt')
     
     nodes_data = {}
-    edges = []
+    edge_counts = Counter()
     
     processed_ids = set()
     current_level_queue = seeds
@@ -49,7 +50,9 @@ def main():
                 print(f"[{depth+1}] Processato: {nodes_data[artist_id]['name']} ({len(collabs)} feat trovati)")
                 
                 for a, b in collabs:
-                    edges.append({'source': a, 'target': b})
+                    pair = tuple(sorted((a, b)))
+                    edge_counts[pair] += 1
+                    
                     if a not in processed_ids: next_level_queue.append(a)
                     if b not in processed_ids: next_level_queue.append(b)
                 
@@ -64,10 +67,11 @@ def main():
             break
 
     print("\nFase finale: Recupero profili mancanti...")
+    
     all_discovered_ids = set()
-    for edge in edges:
-        all_discovered_ids.add(edge['source'])
-        all_discovered_ids.add(edge['target'])
+    for (u, v) in edge_counts.keys():
+        all_discovered_ids.add(u)
+        all_discovered_ids.add(v)
 
     missing_ids = list(all_discovered_ids - set(nodes_data.keys()))
     if missing_ids:
@@ -89,11 +93,23 @@ def main():
                 print(f"Errore batch: {e}")
 
     if not os.path.exists('data'): os.makedirs('data')
+    
     df_nodes = pd.DataFrame(list(nodes_data.values())).drop_duplicates(subset='id')
-    df_edges = pd.DataFrame(edges).drop_duplicates()
+    
+    edges_list = []
+    for (u, v), w in edge_counts.items():
+        edges_list.append({
+            'source': u,
+            'target': v,
+            'weight': w
+        })
+    df_edges = pd.DataFrame(edges_list)
+
     df_nodes.to_csv('data/nodes.csv', index=False)
     df_edges.to_csv('data/edges.csv', index=False)
-    print(f"\nCOMPLETATO: {len(df_nodes)} nodi e {len(df_edges)} archi.")
+    
+    print("-" * 30)
+    print(f"FINE! Ora hai {len(df_nodes)} nodi e {len(df_edges)} archi pesati.")
 
 if __name__ == "__main__":
     main()

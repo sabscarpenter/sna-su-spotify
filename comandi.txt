@@ -10,6 +10,9 @@ venv\Scripts\activate
 Disattivare l’ambiente virtuale:
 deactivate
 
+Creare e aggiornare i requisiti:
+pip freeze > requirements.txt
+
 
 COLLEGAMENTO A GITHUB
 ---------------------

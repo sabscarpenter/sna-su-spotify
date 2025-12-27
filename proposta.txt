@@ -1,0 +1,49 @@
+domanda principale:
+
+quali sono i fattori che spingono gli artisti della scena ispanofona nei diversi stati geografici a collaborare tra loro: la somiglianza di genere musicale e di popolarità, o la volontà di connettere scene diversi?
+
+sviluppo della ricerca: 
+
+l'obiettivo è capire se la rete delle collaborazioni musicali sia "chiusa" o "aperta", analizzando tre aspetti principali:
+
+il genere musicale: gli artisti tendono a collaborare solo con chi fa lo stesso genere (es. chi fa la trap resta con chi fa la trap) o usano i "feat" per esplorare nuovi stili?
+
+la popolarità: si vuole osservare se gli artisti più famosi collaborano solo tra di loro o se interagiscono anche con artisti emergenti.
+
+la geografia: come interagiscono le scene dei diversi stati (es. Messico, Argentina, Spagna, Porto Rico)? esistono artisti che fungono da "ponte" per unire mercati geograficamente lontani?
+
+-----
+
+i dati verranno estratti direttamente da Spotify tramite le sue api ufficiali (Spotify for Developers). una volta configurata un'applicazione nel portale developer di Spotify, l'accesso ai dati avviene tramite la libreria Python Spotipy.
+
+in merito alla raccolta, seguirò la tecnica del "snowball sampling":
+
+ho selezionato 50 artisti di riferimento (seeds) che rappresentano i leader della scena ispanofona in diversi stati (es. Bad Bunny per Porto Rico, Peso Pluma per il Messico, Saramalacara per l'Argentina, Bb Trickz per la Spagna). la profondità della ricerca sara di un unico livello poiché per ogni artista seme, verranno analizzati tutti gli album e i singoli pubblicati per estrarre i nomi dei collaboratori presenti in ogni traccia. la rete si espanderà includendo tutti questi artisti "vicini". avrei potuto farlo di due livelli e includere poi le collaborazioni dei collaboratori trovati nella ricerca del primo livello, ma poi ci ritroveremmo con troppi dati che non permettono di avere un'idea chiara e Spotify blocca lo scraping su così tanti dati.
+
+i dati verranno organizzati in due file in formato CSV, uno per i nodi e uno per i collegamenti, che poi saranno importati nel software di analisi Gephi.
+
+-----
+
+per analizzare i dati raccolti, utilizzerò principalmente il software Gephi. la mia metodologia si dividerà in tre fasi principali:
+
+1. visualizzazione e layout: 
+
+una volta importati i nodi e i collegamenti, applicherò l'algoritmo ForceAtlas2 presente all'interno di Gephi. questo algoritmo serve a dare una forma logica al grafo: sposterà gli artisti che collaborano spesso tra loro vicini, creando dei gruppi visivi (cluster), e allontanerà quelli che non hanno legami. inoltre, sfruttando gli algoritmi integrati all'interno di Gephi, potrò trovare e colorare coerentemente tutte le comunità che si creano dentro alla rete. tutto ciò mi permetterà di vedere subito, se la scena ispanofona è unita o divisa. applicherò, pure, modifiche agli archi per dare  a loro uno spessore diverso a seconda del peso (numero di collaborazioni tra un artista A e un artista B), renderò visibili e chiari i nomi degli artisti sui nodi e modificherò la dimensione del nodo a seconda della popolarità dell'artista associato. eventualmente, magari aggiungerò anche altre modifiche.
+
+2. calcolo delle metriche:
+
+degree centrality: 
+
+mi dara la lista di artisti con più collaborazioni.
+
+betweenness centrality: 
+
+questa è una delle metriche più importanti per il mio progetto. mi permetterà di individuare gli artisti che fungono da "ponte", cioè quelli che collegano generi o stati diversi. ad esempio, sarò in grado di vedere chi è l'artista che permette a un ascoltatore di passare dalla hyperpop argentina ai corridos messicani.
+
+modularità e omofilia: 
+
+come spiegato precedentemente, userò un algoritmo per dividere automaticamente la rete in comunità, ma non sarà solo un aiuto visivo visto che poi ci daremo un'interpretazione tramite una heatmap in cui metterò le comunità sulle righe e i generi musicali di Spotify sulle colonne per poi così poterle confrontare e vedere se coincidono o se gli artisti creano gruppi nuovi basati solo sulle amicizie e collaborazioni. sarebbe anche possibile  mantenere il grafo diviso per comunità colorate, e poi presentare vicino un altro grafo con lo stesso layout ma in cui il colore è dato dal genere musicale, poiché in questo modo, osservando se i colori sono tutti mescolati, sarà chiaro che c'è tanta collaborazione tra generi musicali diversi e altrimenti, se vedessimo molte macchie isolate, allora potremmo concludere che esiste poca collaborazione tra generi musicali o stati diversi.
+
+usero poi uno scatterplot in cui metterò nell'asse orizzontale l'artista A e nell'asse verticale l'artista B e mapperò un punto usando la popolarità di ciascuno; in questo modo, se i punti formano una linea che tende a y=x, allora ci sarà una chiara correlazione tra popolarità e collaborazione, altrimenti non sarà questo il caso.
+
+queste sono le mie idee a grandi linee, ma poi durante lo sviluppo potrei introdurre delle piccole modifiche o aggiungere più concetti e pezzi. per ora ho già estratto tutti i dati, cioè nodi e collegamenti con tutti gli attributi che mi serviranno, e ho anche generato la rete che in seguito inizierò a studiare.
