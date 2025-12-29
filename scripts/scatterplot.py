@@ -2,6 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from matplotlib.colors import LinearSegmentedColormap
+
+# Palette estratta da Gephi
+gephi_palette = [
+    "#845D95", "#FB71FF", "#F6B2FB", "#A947C7", 
+    "#BF84F9", "#C1A2F8", "#F659F7", "#7F69C6", 
+    "#9C5B9E", "#DC7AF2", "#F4C0F7", "#8E7AF2"
+]
+
+# Crea una colormap con sfumatura da viola chiaro a fucsia
+gephi_cmap = LinearSegmentedColormap.from_list("gephi", ["#BF84F9", "#DC7AF2", "#FB71FF"])
 
 # Carica i dati
 nodes_df = pd.read_csv('../data/pesata/nodes.csv')
@@ -36,44 +47,46 @@ print(f"Range popolarità source: {df_edges['source_popularity'].min()} - {df_ed
 print(f"Range popolarità target: {df_edges['target_popularity'].min()} - {df_edges['target_popularity'].max()}")
 
 # Crea lo scatterplot
-plt.figure(figsize=(12, 12))
+fig, ax = plt.subplots(figsize=(12, 12))
+fig.patch.set_facecolor('white')
+ax.set_facecolor('white')
 
 # Plot con trasparenza per vedere le sovrapposizioni
 # Usa il peso per dimensionare i punti
-scatter = plt.scatter(df_edges['source_popularity'], 
+scatter = ax.scatter(df_edges['source_popularity'], 
                      df_edges['target_popularity'],
-                     alpha=0.3,
+                     alpha=0.4,
                      s=df_edges['weight'] * 10,  # Dimensione proporzionale al peso
                      c=df_edges['weight'],
-                     cmap='viridis',
+                     cmap=gephi_cmap,
                      edgecolors='black',
                      linewidths=0.5)
 
 # Aggiungi la linea diagonale per evidenziare la simmetria
 min_pop = min(df_edges['source_popularity'].min(), df_edges['target_popularity'].min())
 max_pop = max(df_edges['source_popularity'].max(), df_edges['target_popularity'].max())
-plt.plot([min_pop, max_pop], [min_pop, max_pop], 
-         'r--', alpha=0.5, linewidth=2, label='Diagonale (simmetria)')
+ax.plot([min_pop, max_pop], [min_pop, max_pop], 
+         color='#A947C7', linestyle='--', alpha=0.6, linewidth=2, label='Diagonale (simmetria)')
 
 # Configurazione del grafico
-plt.xlabel('Popolarità Artista Source', fontsize=14)
-plt.ylabel('Popolarità Artista Target', fontsize=14)
-plt.title('Scatterplot Collegamenti tra Artisti\n(basato sulla Popolarità)', 
+ax.set_xlabel('Popolarità Artista Source', fontsize=14)
+ax.set_ylabel('Popolarità Artista Target', fontsize=14)
+ax.set_title('Scatterplot Collegamenti tra Artisti\n(basato sulla Popolarità)', 
           fontsize=16, pad=20)
 
 # Aggiungi griglia
-plt.grid(True, alpha=0.3, linestyle='--')
+ax.grid(True, alpha=0.3, linestyle='--', color='gray')
 
 # Colorbar per il peso
-cbar = plt.colorbar(scatter, label='Peso del collegamento')
+cbar = plt.colorbar(scatter, ax=ax, label='Peso del collegamento')
 
 # Legenda
-plt.legend(loc='upper left', fontsize=10)
+ax.legend(loc='upper left', fontsize=10)
 
 # Assicura che gli assi abbiano la stessa scala
-plt.axis('equal')
-plt.xlim(min_pop - 5, max_pop + 5)
-plt.ylim(min_pop - 5, max_pop + 5)
+ax.axis('equal')
+ax.set_xlim(min_pop - 5, max_pop + 5)
+ax.set_ylim(min_pop - 5, max_pop + 5)
 
 plt.tight_layout()
 
