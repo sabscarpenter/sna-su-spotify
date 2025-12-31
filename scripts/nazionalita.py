@@ -2,25 +2,25 @@ import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 import time
 
+# Caricamento dati
 df_original = pd.read_csv('../data/pesata/nodes.csv')
-# Creo una lista di tuple (id, name)
 artist_data = df_original[['id', 'name']].drop_duplicates().values.tolist()
 
+# Query Wikidata per nazionalità
 def get_artist_data_from_wikidata(spotify_id, artist_name):
     endpoint_url = "https://query.wikidata.org/sparql"
     sparql = SPARQLWrapper(endpoint_url, agent="MusicResearchProject/1.0")
     sparql.setReturnFormat(JSON)
     
-    # Prima query: cerca con ID Spotify - priorità a luogo di nascita e origine
     query = f"""
     SELECT ?artistLabel ?countryLabel WHERE {{
       ?artist wdt:P1902 "{spotify_id}" .
       OPTIONAL {{
-        {{ ?artist wdt:P19/wdt:P17 ?country . }}  # Luogo di nascita → paese
+        {{ ?artist wdt:P19/wdt:P17 ?country . }}
         UNION
-        {{ ?artist wdt:P495 ?country . }}  # Paese di origine
+        {{ ?artist wdt:P495 ?country . }}
         UNION
-        {{ ?artist wdt:P27 ?country . }}  # Cittadinanza (ultimo fallback)
+        {{ ?artist wdt:P27 ?country . }}
       }}
       SERVICE wikibase:label {{ bd:serviceParam wikibase:language "it,es,en". }}
     }}
@@ -37,7 +37,6 @@ def get_artist_data_from_wikidata(spotify_id, artist_name):
             
             return name, country
         
-        # Fallback: cerca per nome se l'ID Spotify non ha dato risultati
         print(f"  ID non trovato per {artist_name}, provo con il nome...")
         name_query = f"""
         SELECT ?artistLabel ?countryLabel WHERE {{
@@ -47,18 +46,18 @@ def get_artist_data_from_wikidata(spotify_id, artist_name):
           UNION
           {{ ?artist wdt:P106 wd:Q177220 . }}
           OPTIONAL {{
-            {{ ?artist wdt:P19/wdt:P17 ?country . }}  # Luogo di nascita → paese
+            {{ ?artist wdt:P19/wdt:P17 ?country . }}
             UNION
-            {{ ?artist wdt:P495 ?country . }}  # Paese di origine
+            {{ ?artist wdt:P495 ?country . }}
             UNION
-            {{ ?artist wdt:P27 ?country . }}  # Cittadinanza (ultimo fallback)
+            {{ ?artist wdt:P27 ?country . }}
           }}
           SERVICE wikibase:label {{ bd:serviceParam wikibase:language "it,es,en". }}
         }}
         LIMIT 1
         """
         
-        time.sleep(0.3)  # Piccolo delay per non sovraccaricare
+        time.sleep(0.3)
         sparql.setQuery(name_query)
         name_results = sparql.query().convert()
         
@@ -69,12 +68,13 @@ def get_artist_data_from_wikidata(spotify_id, artist_name):
             
             return name, country
         
-        return artist_name, "Unknown"  # Almeno restituisco il nome dal CSV
+        return artist_name, "Unknown"
         
     except Exception as e:
         print(f"Errore per {artist_name} ({spotify_id}): {e}")
         return artist_name, "Error"
 
+# Elaborazione artisti
 risultati = []
 total = len(artist_data)
 unknown_country_count = 0
@@ -101,8 +101,9 @@ for i, (s_id, s_name) in enumerate(artist_data):
     if (i + 1) % 10 == 0:
         print(f"Processati {i+1}/{total}... (Paese sconosciuto: {unknown_country_count}, Errors: {error_count}, Fallback: {fallback_count})")
 
-    time.sleep(0.5)  # Aumentato da 0.4 a 0.5 per evitare rate limiting
+    time.sleep(0.5)
 
+# Salvataggio risultati
 df_nationalities = pd.DataFrame(risultati)
 df_nationalities.to_csv('../data/artisti-e-nazionalita.csv', index=False)
 

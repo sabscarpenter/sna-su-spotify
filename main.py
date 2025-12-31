@@ -26,12 +26,12 @@ def main():
     
     nodes_data = {}
     edge_counts = Counter()
-    
     processed_ids = set()
     current_level_queue = seeds
 
     print(f"Inizio raccolta dati con PROFONDITÀ: {MAX_DEPTH}")
 
+    # Raccolta dati per livello
     for depth in range(MAX_DEPTH):
         print(f"\n--- ANALISI LIVELLO {depth + 1} ---")
         next_level_queue = []
@@ -66,6 +66,7 @@ def main():
         if not current_level_queue:
             break
 
+    # Recupero profili mancanti
     print("\nFase finale: Recupero profili mancanti...")
     
     all_discovered_ids = set()
@@ -92,6 +93,7 @@ def main():
             except Exception as e:
                 print(f"Errore batch: {e}")
 
+    # Salvataggio risultati
     if not os.path.exists('data'): os.makedirs('data')
     
     df_nodes = pd.DataFrame(list(nodes_data.values())).drop_duplicates(subset='id')
