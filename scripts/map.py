@@ -23,11 +23,13 @@ GENRE_MAPPING = {
     'reggaeton mexa': 'reggaeton',
     
     'trap': 'trap',
-    'trap latino': 'trap',
     'argentine trap': 'trap',
+    'trap latino': 'trap',
     'chilean trap': 'trap',
     'mexican hip hop': 'trap',
     'latin hip hop': 'trap',
+    'urbano latino': 'trap',
+    'pop urbano': 'trap',
     
     'corrido': 'corridos',
     'corridos tumbados': 'corridos',
@@ -35,9 +37,6 @@ GENRE_MAPPING = {
     'electro corridos': 'corridos',
     'sad sierreño': 'corridos',
     'sierreño': 'corridos',
-    
-    'urbano latino': 'urbano',
-    'pop urbano': 'urbano',
     
     'banda': 'banda',
     'norteño': 'banda',
@@ -59,6 +58,7 @@ GENRE_MAPPING = {
     'chilean mambo': 'mambo',
     
     'hyperpop': 'hyperpop',
+
     'neoperreo': 'experimental',
     'experimental': 'experimental',
     
@@ -157,7 +157,7 @@ print("\n=== GENERI MAPPATI (TOP 20) ===")
 for genre, count in mapped_counts.most_common(20):
     print(f"{genre}: {count}")
 
-output_path = '../data/gephi/nodes_mapped.csv'
+output_path = '../data/gephi/generi-mappati.csv'
 df.to_csv(output_path, index=False)
 print(f"\n✓ File salvato in: {output_path}")
 

@@ -3,7 +3,7 @@ import time
 import os
 from collections import Counter
 from scripts.utils import get_spotify_client
-from scripts.data_collection import get_artist_info, get_collaborations
+from scripts.collection import get_artist_info, get_collaborations
 
 MAX_DEPTH = 1
 

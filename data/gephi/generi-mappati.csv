@@ -7,15 +7,15 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 5QS9NAK4AgJPTcRe472pZA,Bb trickz,Bb trickz,62,,8,
 4obzFoKoKRHIphyHzJ35G3,Becky G,Becky G,77,reggaeton;latin,6,reggaeton;latin
 0cr0zp1CI5bVOrXaVzfpUI,bic,bic,33,,14,
-716NhGYqD1jl2wI1Qkgq36,Bizarrap,Bizarrap,81,argentine trap;trap latino;urbano latino,1,trap;urbano
+716NhGYqD1jl2wI1Qkgq36,Bizarrap,Bizarrap,81,argentine trap;trap latino;urbano latino,1,trap
 6w3SkAHYPsQ1bxV7VDlG5y,Cazzu,Cazzu,76,argentine trap;trap latino;turreo,1,trap;rkt
 1Yj5Xey7kTwvZla8sqdsdE,Cris MJ,Cris MJ,83,reggaeton chileno;chilean trap;chilean mambo;reggaeton,12,reggaeton;trap
 4VMYDCV2IEDYJArk749S6m,Daddy Yankee,Daddy Yankee,89,reggaeton;latin,4,reggaeton;latin
 1bAftSH8umNcGZ0uyV7LMg,Duki,Duki,81,argentine trap;trap;trap latino,1,trap
-5XJDexmWFLWOkjOEjOVX3e,Eladio Carrion,Eladio Carrion,81,trap latino;urbano latino,1,trap;urbano
+5XJDexmWFLWOkjOEjOVX3e,Eladio Carrion,Eladio Carrion,81,trap latino;urbano latino,1,trap
 0AqlFI0tz2DsEoJlKSIiT9,Emilia,Emilia,76,argentine trap,1,trap
 0XeEobZplHxzM9QzFQWLiR,Eslabon Armado,Eslabon Armado,78,corridos tumbados;sad sierreño;corrido;sierreño;música mexicana;corridos bélicos,2,corridos;banda
-2LRoIwlKmHjgvigdNGBHNo,Feid,Feid,88,reggaeton;urbano latino,4,reggaeton;urbano
+2LRoIwlKmHjgvigdNGBHNo,Feid,Feid,88,reggaeton;urbano latino,4,reggaeton;trap
 0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,Fuerza Regida,92,corrido;corridos tumbados;corridos bélicos;música mexicana;sierreño;banda;sad sierreño;electro corridos,2,corridos;banda
 6Sbl0NT50roqWvy746MfVf,Gabito Ballesteros,Gabito Ballesteros,82,corrido;corridos tumbados;corridos bélicos;música mexicana;sad sierreño;electro corridos;sierreño;banda,2,corridos;banda
 1dKdetem2xEmjgvyymzytS,Grupo Firme,Grupo Firme,83,banda;corrido;norteño;sierreño;grupera;ranchera;música mexicana,12,banda;corridos
@@ -29,7 +29,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 4UqfXEVibVEPfoopm7Pduc,Los 2 de la S,Los 2 de la S,57,banda;sierreño;norteño,12,banda;corridos
 0pePYDrJGk8gqMRbXrLJC8,Luis R Conriquez,Luis R Conriquez,83,corrido;corridos bélicos;corridos tumbados;electro corridos;dembow belico;banda;sierreño;sad sierreño;música mexicana,2,corridos;dembow
 19HM5j0ULGSmEoRcrSe5x3,Milo j,Milo j,85,argentine trap,1,trap
-0Q8NcsJwoCbZOHHW63su5S,Mora,Mora,83,urbano latino;trap latino;reggaeton,4,urbano;trap
+0Q8NcsJwoCbZOHHW63su5S,Mora,Mora,83,urbano latino;trap latino;reggaeton,4,trap;reggaeton
 7iK8PXO48WeuP03g8YR51W,Myke Towers,Myke Towers,87,reggaeton;trap latino;urbano latino,0,reggaeton;trap
 0elWFr7TW8piilVRYJUe4P,Natanael Cano,Natanael Cano,86,corridos tumbados;corrido;corridos bélicos;sierreño;sad sierreño;electro corridos;música mexicana;banda,2,corridos;banda
 2UZIAOlrnyZmyzt1nuXr9y,Nicki Nicole,Nicki Nicole,75,argentine trap,1,trap
@@ -38,19 +38,19 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 3vQ0GE3mI0dAaxIMYe5g7z,Paulo Londra,Paulo Londra,77,argentine trap;trap latino;reggaeton,1,trap;reggaeton
 12GqGscKJx3aE4t07u7eVZ,Peso Pluma,Peso Pluma,89,corrido;corridos tumbados;corridos bélicos;música mexicana;sad sierreño;banda,2,corridos;banda
 52iwsT98xCoGgiGntTiR7K,Quevedo,Quevedo,84,,4,
-1mcTU81TzQhprhouKaTkpq,Rauw Alejandro,Rauw Alejandro,90,reggaeton;urbano latino;trap latino;latin,9,reggaeton;urbano
+1mcTU81TzQhprhouKaTkpq,Rauw Alejandro,Rauw Alejandro,90,reggaeton;urbano latino;trap latino;latin,9,reggaeton;trap
 04mTej6RpWzBxGwhfThpIi,Rojuu,Rojuu,62,hyperpop,8,hyperpop
 3QchzUOTSCKWmaRGEEiuir,Saramalacara,Saramalacara,58,hyperpop;argentine trap,8,hyperpop;trap
-77ziqFxp5gaInVrF2lj4ht,Sech,Sech,80,reggaeton;urbano latino,4,reggaeton;urbano
+77ziqFxp5gaInVrF2lj4ht,Sech,Sech,80,reggaeton;urbano latino,4,reggaeton;trap
 0GM7qgcRCORpGnfcN2tCiB,Tainy,Tainy,80,reggaeton,4,reggaeton
 5eumcnUkdmGvkvcsx1WFNG,Tito Double P,Tito Double P,86,corrido;corridos tumbados;corridos bélicos;electro corridos;dembow belico;música mexicana,2,corridos;dembow
-0eHQ9o50hj6ZDNBt6Ys1sD,Yandel,Yandel,79,reggaeton;urbano latino;latin,4,reggaeton;urbano
+0eHQ9o50hj6ZDNBt6Ys1sD,Yandel,Yandel,79,reggaeton;urbano latino;latin,4,reggaeton;trap
 3qsKSpcV3ncke3hw52JSMB,Young Miko,Young Miko,78,trap latino,10,trap
-4aSlfXDn9R60UlbZEboBUy,YOVNGCHIMI,YOVNGCHIMI,70,trap latino;urbano latino,3,trap;urbano
+4aSlfXDn9R60UlbZEboBUy,YOVNGCHIMI,YOVNGCHIMI,70,trap latino;urbano latino,3,trap
 1KUm2LsC3HnPKHvIoo4cKu,Ysrael Barajas,Ysrael Barajas,63,electro corridos;corrido;corridos tumbados;corridos bélicos;dembow belico;sad sierreño,5,corridos;dembow
 12vb80Km0Ew53ABfJOepVz,Ñengo Flow,Ñengo Flow,83,reggaeton;trap latino,0,reggaeton;trap
 12lHTAdc9T204lw5qPtasv,Foreign Teck,Foreign Teck,57,trap latino,3,trap
-1TA5sGRlKUJXBN4ZyJuDIX,Blessd,Blessd,85,reggaeton;urbano latino,4,reggaeton;urbano
+1TA5sGRlKUJXBN4ZyJuDIX,Blessd,Blessd,85,reggaeton;urbano latino,4,reggaeton;trap
 5VdG4Pm8hryqK7jAkdFlIo,Cheo Gallego,Cheo Gallego,49,,10,
 1GDbiv3spRmZ1XdM1jQbT7,NATTI NATASHA,NATTI NATASHA,73,reggaeton;latin;urbano latino;bachata,0,reggaeton;latin
 5rHC8VSODpT9V7a8ZQu1h6,ORO600,ORO600,51,argentine trap,1,trap
@@ -69,7 +69,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 5gpZDWWbuzTAEzPAGHcSqY,Santino Villarruel,Santino Villarruel,34,,1,
 74NBPbyyftqJ4SpDZ4c1Ed,Tom Morello,Tom Morello,66,,10,
 7H4WTvvOCWtAuj3gMoldrt,Fido,Fido,24,,4,
-2lcWprkQW6ehqKep82rWnC,Moffa,Moffa,41,urbano latino,4,urbano
+2lcWprkQW6ehqKep82rWnC,Moffa,Moffa,41,urbano latino,4,trap
 2ydZrTy8U3kOMOzx20s3dg,DJ Nelson,DJ Nelson,70,reggaeton,0,reggaeton
 5xp0m6dRz284in9nArK60v,Octubre Doce,Octubre Doce,40,,12,
 0x5lhIYknBUEozHuXjkwUs,Galee Galee,Galee Galee,56,chilean trap;reggaeton chileno;chilean mambo;mambo,12,trap;reggaeton
@@ -103,7 +103,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 12m4a5ljGoe6yyYPpVi7Hr,E.VAX,E.VAX,49,,4,
 5U0j7qddH2BMJDF3NOXS96,DJ Ricky,DJ Ricky,20,salsa choke;merengue,0,merengue
 5QcHBpoxrY7vx3ulMKEvTS,Chiquis,Chiquis,45,latin country;música mexicana;banda,6,banda
-1GKIlPFdcewHtpDVCQ8zmJ,Brray,Brray,72,reggaeton;urbano latino,0,reggaeton;urbano
+1GKIlPFdcewHtpDVCQ8zmJ,Brray,Brray,72,reggaeton;urbano latino,0,reggaeton;trap
 01rgao9OzfBm2BOHWJpi1Y,Espinoza Paz,Espinoza Paz,69,banda;ranchera;popular colombian music;norteño;grupera;mariachi,12,banda
 0aULg7LximLNhI6lLzxcXI,RØZ,RØZ,66,electro corridos,2,corridos
 0v4ZR80GST5lTyY4b6UEzR,DRED BEY,DRED BEY,38,,8,
@@ -148,7 +148,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 4r63FhuTkUYltbVAg5TQnk,DaBaby,DaBaby,79,,3,
 2cPqdH7XMvwaBJEVjheH8g,Jay Wheeler,Jay Wheeler,77,reggaeton,0,reggaeton
 16Juw2gfa9IxEL3Vu69cH7,Yaga & Mackie,Yaga & Mackie,63,reggaeton,0,reggaeton
-4zOhMWD0LoBe2nP7s9cHhX,Joyce Santana,Joyce Santana,56,trap latino;urbano latino,10,trap;urbano
+4zOhMWD0LoBe2nP7s9cHhX,Joyce Santana,Joyce Santana,56,trap latino;urbano latino,10,trap
 0Yg29FX1M4ayqjXs0ttZFq,Young Cister,Young Cister,74,chilean trap;reggaeton chileno;chilean mambo,1,trap;reggaeton
 1E7XNYAEwSLSAiLDYRMs1G,Albert Hype,Albert Hype,27,,1,
 4UhDECNxyqKv0Cn0sua1MC,CARABIN3,CARABIN3,67,,3,
@@ -170,7 +170,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 5DMTLrpmTZO8GLDZ5Je1yT,Speedy,Speedy,31,soca;bassline;calypso,4,
 4zTS87j9J5bBv0R9AEzeC7,Fend,Fend,46,electro corridos;dembow belico;corrido;corridos tumbados,5,corridos;dembow
 2R7uy52biUCTdDH0OctTPU,Ed Maverick,Ed Maverick,38,sad sierreño;corridos tumbados,2,corridos
-6UhGN5pVzgbBYjpqkxKM5F,lil joujou,lil joujou,39,trap latino;urbano latino,10,trap;urbano
+6UhGN5pVzgbBYjpqkxKM5F,lil joujou,lil joujou,39,trap latino;urbano latino,10,trap
 1yPvnL2XGGehNiOGWzcAAG,Dan Sanchez,Dan Sanchez,63,corridos tumbados;corrido;electro corridos;corridos bélicos;dembow belico,2,corridos;dembow
 2SNfNJDsahTSVFwgxposF5,Soge Culebra,Soge Culebra,59,,4,
 7cxq5jTv6N3KjPehEhnlXG,Alonso Ortiz,Alonso Ortiz,48,corridos tumbados;corrido;corridos bélicos,5,corridos
@@ -181,7 +181,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 1NejZ771d4oSoEcD6qBAIA,Nueva Era,Nueva Era,37,corridos tumbados;corrido,2,corridos
 68w2t0wbrGnxSIUHzWs5bt,Lito Kirino,Lito Kirino,57,trap latino;trap;dembow,3,trap;dembow
 43DTA4Ai9jSFpLjOxOKXJW,Chuy Cuadras,Chuy Cuadras,23,corridos bélicos;corrido;corridos tumbados,2,corridos
-2oQX8QiMXOyuqbcZEFsZfm,El Alfa,El Alfa,79,dembow;urbano latino;latin,4,dembow;urbano
+2oQX8QiMXOyuqbcZEFsZfm,El Alfa,El Alfa,79,dembow;urbano latino;latin,4,dembow;trap
 6uzHLlGqFKaXYOnZyYmXYg,LOUKI,LOUKI,59,reggaeton chileno,12,reggaeton
 7mVQGK5j4VKkAvdOhUotB1,Fernandezz,Fernandezz,63,neoperreo,3,experimental
 5wUO3A6DT4tO5UDz21kE2Y,Neutro Shorty,Neutro Shorty,64,trap latino;latin hip hop,0,trap
@@ -217,14 +217,14 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 4RXxwBtdt6k1YNyyAyiOng,Pipe Bueno,Pipe Bueno,61,popular colombian music;ranchera;colombian pop;vallenato,12,banda;pop
 0PrhwIWbqYFYyY2ZrkIWgI,Adriel Favela,Adriel Favela,63,corrido;banda;corridos tumbados;sierreño;corridos bélicos;sad sierreño,2,corridos;banda
 0JdvRpul2MbuhX7k0FUkko,Nando Boom,Nando Boom,49,reggae en español;calypso,4,
-5dbaLmK5SHLLg8Z4CcTJpX,Greeicy,Greeicy,70,colombian pop;pop urbano,4,pop;urbano
+5dbaLmK5SHLLg8Z4CcTJpX,Greeicy,Greeicy,70,colombian pop;pop urbano,4,pop;trap
 2NZD6Gqfk60GEcAAnJKVsR,Stars Music Chile,Stars Music Chile,55,reggaeton chileno;chilean trap;chilean mambo,12,reggaeton;trap
 57nPqD7z62gDdq37US9XJR,Arcane,Arcane,79,score,10,
 77T5XlEwCRjlmRIioW5OXB,Clúster,Clúster,54,argentine trap,1,trap
 0zO8yNnw5GQgutcIyXfGBY,ELENA ROSE,ELENA ROSE,74,latin afrobeats,4,afro
 46SHBwWsqBkxI7EeeBEQG7,Kodak Black,Kodak Black,82,,3,
 6UbmqUEgjLA6jAcXwbM1Z9,BIBI,BIBI,67,k-pop;k-rap,6,k-pop
-0tmwSHipWxN12fsoLcFU3B,Manuel Turizo,Manuel Turizo,83,reggaeton;pop urbano;latin;colombian pop,4,reggaeton;urbano
+0tmwSHipWxN12fsoLcFU3B,Manuel Turizo,Manuel Turizo,83,reggaeton;pop urbano;latin;colombian pop,4,reggaeton;trap
 4V8Sr092TqfHkfAA5fXXqG,Luis Fonsi,Luis Fonsi,76,latin,4,latin
 3YXGxdYldEXVVlCdCkFD5G,Ivonne Galaz,Ivonne Galaz,36,corridos tumbados;corrido;sad sierreño;corridos bélicos,2,corridos
 2cmqbSrv0RSUeYRuWkqSiQ,Officialalex425,Officialalex425,58,sad sierreño;corridos tumbados;corrido;sierreño,2,corridos
@@ -260,7 +260,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 0rjms710nwQTdrQheXHJfz,Standly,Standly,67,reggaeton chileno;chilean trap;chilean mambo;mambo;reggaeton,12,reggaeton;trap
 4twMBjUEs3uYOoY4ywzJAZ,Rodrigo Films,Rodrigo Films,31,dembow,3,dembow
 0NlNru2YcUz6RbnpYGQz26,Clave Especial,Clave Especial,76,corrido;corridos tumbados;corridos bélicos;música mexicana,2,corridos;banda
-3fZk3Gm5dN5v5yfYMQ04Bx,Dímelo Flow,Dímelo Flow,69,reggaeton;urbano latino,0,reggaeton;urbano
+3fZk3Gm5dN5v5yfYMQ04Bx,Dímelo Flow,Dímelo Flow,69,reggaeton;urbano latino,0,reggaeton;trap
 3abT87tqQ4Q5PA5nw6CYyH,Ángela Aguilar,Ángela Aguilar,67,mariachi;ranchera;banda;música mexicana,6,banda
 0dqT9B1Xej71qvAo8uE4Uh,Sahir,Sahir,55,trap latino,3,trap
 78rkeQAvjl85yNyLAqEMVe,Mañas Ru-Fino,Mañas Ru-Fino,61,latin hip hop,4,trap
@@ -285,7 +285,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 3YXpTiyVmYCfANOlnWv6vr,Trebol Clan,Trebol Clan,60,reggaeton,0,reggaeton
 3GPTvhZ8XfH7WkHXidvELk,Chris Lebron,Chris Lebron,63,,0,
 1mX1TWKpNxDSAH16LgDfiR,Jesse & Joy,Jesse & Joy,77,latin pop,12,latin
-4dhKkIzf9LXogFL1NXfQc1,Kapla y Miky,Kapla y Miky,42,urbano latino,0,urbano
+4dhKkIzf9LXogFL1NXfQc1,Kapla y Miky,Kapla y Miky,42,urbano latino,0,trap
 5l6N2hoIaP7snXdjnCULvk,Luis Alfonso Partida El Yaki,Luis Alfonso Partida El Yaki,69,banda;sierreño;norteño,12,banda;corridos
 0F0qHLgO0rPrxKUjv19N7z,DJ Urba,DJ Urba,49,,0,
 0OpXeanba0vYnyoft00BP6,Polo Gonzalez,Polo Gonzalez,54,corridos tumbados;corrido;corridos bélicos;sad sierreño;sierreño;electro corridos,2,corridos
@@ -312,7 +312,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 3Okcq0dqLVlEFHRZ5t22bA,Voltio,Voltio,59,reggaeton;latin hip hop,0,reggaeton;trap
 6sq1yF0OZEWA4xoXVKW1L9,Alejandro Fernández,Alejandro Fernández,78,mariachi;ranchera;latin pop;bolero,12,banda;latin
 0GgyFUpOyzWDRDqx8FCTDN,Baby Rasta,Baby Rasta,72,reggaeton,9,reggaeton
-6ieK9Ddas29reReO60on3o,"Gotay ""El Autentiko""","Gotay ""El Autentiko""",64,reggaeton;urbano latino,0,reggaeton;urbano
+6ieK9Ddas29reReO60on3o,"Gotay ""El Autentiko""","Gotay ""El Autentiko""",64,reggaeton;urbano latino,0,reggaeton;trap
 0u4eSD22YhmWJMg1A22GBw,Alejo Park,Alejo Park,24,argentine trap,1,trap
 32IoF74fLhRaNSuABa3HO7,Joel Nuñez,Joel Nuñez,30,corridos tumbados;corrido;corridos bélicos,2,corridos
 07YUOmWljBTXwIseAUd9TW,Sebastian Yatra,Sebastian Yatra,79,colombian pop;reggaeton,4,pop;reggaeton
@@ -366,14 +366,14 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 5lCxUN0t4niIy30texHRxo,Full Harmony,Full Harmony,26,,0,
 6oMRQ5H3A2XA5I3RG3leni,Alan Gomez,Alan Gomez,61,rkt;turreo;techengue,1,rkt;techengue
 3PkVrt8lRBTV2RDSICxz5X,Divino,Divino,50,reggaeton,4,reggaeton
-2YRyPiW98bpkARAS4B3OQP,Dei V,Dei V,81,trap latino;urbano latino,3,trap;urbano
+2YRyPiW98bpkARAS4B3OQP,Dei V,Dei V,81,trap latino;urbano latino,3,trap
 7x7vfF89MqM94K8wvK3Omq,La Duraca,La Duraca,34,,1,
 4nD4jJ7anYuvuMtM8Wrspz,Lautaro Lopez,Lautaro Lopez,39,argentine trap,1,trap
 0Y34e6XlsBGOdjEyKZzTMB,SowlBeatz,SowlBeatz,48,reggaeton chileno;chilean trap;chilean mambo,12,reggaeton;trap
 16yTBMwXmeW9MQgfcHZgA7,Baby Johnny,Baby Johnny,46,trap latino,0,trap
 5MraexJKZDrQYzS98kNwie,Sevdaliza,Sevdaliza,70,,4,
 66ArjpKRgw8vYBf9yhktto,Nach,Nach,59,latin hip hop;rap,1,trap;hip hop
-50sIhX3HytFEwQXZJLUZQE,Alejo,Alejo,61,reggaeton;urbano latino,4,reggaeton;urbano
+50sIhX3HytFEwQXZJLUZQE,Alejo,Alejo,61,reggaeton;urbano latino,4,reggaeton;trap
 7y5vacxuCM2lyUEEPnQcwd,RobGz,RobGz,49,trap latino,2,trap
 5szJHKg5xeUlQ9pTqzdpic,Taiu,Taiu,68,argentine trap,1,trap
 6wH6iStAh4KIaWfuhf0NYM,Manu Chao,Manu Chao,72,latin alternative,4,latin
@@ -395,9 +395,9 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 6ASri4ePR7RlsvIQgWPJpS,iann dior,iann dior,69,melodic rap,1,hip hop
 6Lad89OaqnRo5nf7FyVipt,Garena Free Fire,Garena Free Fire,53,,1,
 34nbQa7Hug9DYkRJpfKNFv,T3R Elemento,T3R Elemento,71,corrido;corridos tumbados;sierreño;sad sierreño;banda;corridos bélicos;norteño;música mexicana,2,corridos;banda
-233EuLolQJNuWaoQf617jD,Ery,Ery,23,urbano latino,4,urbano
+233EuLolQJNuWaoQf617jD,Ery,Ery,23,urbano latino,4,trap
 0Po5jQg8puEmTBiVsfY38p,Izzay,Izzay,20,argentine trap,1,trap
-2IMZYfNi21MGqxopj9fWx8,Rels B,Rels B,83,urbano latino;trap latino,1,urbano;trap
+2IMZYfNi21MGqxopj9fWx8,Rels B,Rels B,83,urbano latino;trap latino,1,trap
 64aJYyrXljOodnUG6jvhRD,DJ Luian,DJ Luian,77,reggaeton;trap latino,3,reggaeton;trap
 0odliLZMTk45CEVzF3Zocl,Mozart La Para,Mozart La Para,56,dembow,4,dembow
 5KpmLKI7ktzNzQL13J95Pf,Cerounno,Cerounno,56,boom bap,1,hip hop
@@ -420,7 +420,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 21dooacK2WGBB5amYvKyfM,Smokepurpp,Smokepurpp,54,,1,
 5wx70QuZtxRUIIYek3RSaV,Carolina Ross,Carolina Ross,59,,12,
 09T10LRB7GvEn4bUNTWGVv,Alexis y Zion,Alexis y Zion,26,,0,
-6Itjwvv5YmsC8ZcI5N4Jux,Sael,Sael,54,urbano latino,1,urbano
+6Itjwvv5YmsC8ZcI5N4Jux,Sael,Sael,54,urbano latino,1,trap
 3WG2Qwav9SV56V57SFe92i,Ivan Orozco,Ivan Orozco,46,sad sierreño;corridos tumbados;corrido;corridos bélicos;sierreño,2,corridos
 3yDIp0kaq9EFKe07X1X2rz,Nile Rodgers,Nile Rodgers,72,,9,
 3VHAySZQPlfGlNLslzXYpN,NATHY PELUSO,NATHY PELUSO,68,,1,
@@ -477,7 +477,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 5I8OAPN5jY1wvHwpnsRRsA,Kybba,Kybba,69,dancehall;shatta;moombahton,4,dancehall;electronic
 4kJ2OBSNasUA4yOT5NCfCl,"Luis Angel ""El Flaco""","Luis Angel ""El Flaco""",65,banda;norteño;corrido,12,banda;corridos
 6veh5zbFpm31XsPdjBgPER,BIA,BIA,69,,10,
-5IYRfypwG9BDDh5ZRPI80z,Totoy El Frio,Totoy El Frio,56,reggaeton;urbano latino,4,reggaeton;urbano
+5IYRfypwG9BDDh5ZRPI80z,Totoy El Frio,Totoy El Frio,56,reggaeton;urbano latino,4,reggaeton;trap
 3g1nUbVtiYjO2XNs5DGpLB,Nueva Era,Nueva Era,37,corridos tumbados;corrido;sad sierreño,2,corridos
 4DAhpWFfOQv2UBSAzjhzLV,Rene,Rene,30,corridos tumbados,2,corridos
 2A3uvEbM1K4QWaviVVH5LQ,Maykol theyver,Maykol theyver,1,,0,
@@ -497,8 +497,8 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 3EA9hVIzKfFiQI0Kikz2wo,Andrea Bocelli,Andrea Bocelli,74,classical crossover;opera,4,
 20gsENnposVs2I4rQ5kvrf,Sam Feldt,Sam Feldt,67,tropical house,6,
 4YYxffPVDFe9XoqqbRW6Bq,L-Gante,L-Gante,64,rkt;turreo,1,rkt
-1pQWsZQehhS4wavwh7Fnxd,Lenny Tavárez,Lenny Tavárez,78,reggaeton;urbano latino;trap latino;argentine trap,0,reggaeton;urbano
-7tU1VKOuxiNZwBZC6RHidA,Alexis y Fido,Alexis y Fido,68,reggaeton;urbano latino,9,reggaeton;urbano
+1pQWsZQehhS4wavwh7Fnxd,Lenny Tavárez,Lenny Tavárez,78,reggaeton;urbano latino;trap latino;argentine trap,0,reggaeton;trap
+7tU1VKOuxiNZwBZC6RHidA,Alexis y Fido,Alexis y Fido,68,reggaeton;urbano latino,9,reggaeton;trap
 1CTYCiBGcZTsZBzYoa4pxM,Tapy Quintero,Tapy Quintero,48,corrido;norteño;corridos bélicos,12,corridos;banda
 3yJ7q2MEpB9SLK9Xy1EJ2F,Memo Garza,Memo Garza,54,banda,12,banda
 55kBvzKEORCymfAWcBzGSb,Flagrant Drvms,Flagrant Drvms,19,latin house;tribal house;afro house;afro tech,6,
@@ -568,17 +568,17 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 7y6eZQZwyUvR4PlZOVSR7I,Jonathan Caro,Jonathan Caro,56,corrido;corridos tumbados;corridos bélicos,2,corridos
 5TP8Ubo4jLKEi4Mw2O8fAk,BM,BM,66,rkt;turreo;cuarteto;cumbia,1,rkt;cumbia
 2BJWqrBKEqtZUKWtzmpPDj,Tobal Mj,Tobal Mj,66,reggaeton chileno;chilean trap;chilean mambo;mambo,12,reggaeton;trap
-6NmMI7UnfmIpLRYoz8H9jm,Ankhal,Ankhal,56,trap latino;urbano latino,3,trap;urbano
+6NmMI7UnfmIpLRYoz8H9jm,Ankhal,Ankhal,56,trap latino;urbano latino,3,trap
 5WUlDfRSoLAfcVSX1WnrxN,Sia,Sia,89,,3,
 7DXregrznS25AM30UY9sUU,King Savagge,King Savagge,65,reggaeton chileno;chilean trap;chilean mambo;guaracha;mambo,1,reggaeton;trap
 5eIRbSES1yeGSBuqZ4xvuD,Pekeño 77,Pekeño 77,47,argentine trap;trap,1,trap
 3lIsPQW0jN6sMpiWuiShF0,Dano,Dano,51,argentine trap;latin hip hop,1,trap
-1wZtkThiXbVNtj6hee6dz9,Wisin & Yandel,Wisin & Yandel,83,reggaeton;urbano latino,0,reggaeton;urbano
+1wZtkThiXbVNtj6hee6dz9,Wisin & Yandel,Wisin & Yandel,83,reggaeton;urbano latino,0,reggaeton;trap
 3Isy6kedDrgPYoTS1dazA9,Sean Paul,Sean Paul,84,dancehall,4,dancehall
 17vZy9fIIt6woqdWfc7UCy,Sinfonico,Sinfonico,59,trap latino;trap,0,trap
 1U1el3k54VvEUzo3ybLPlM,Kali Uchis,Kali Uchis,85,,4,
 29fkrV8IuMETQBv8PgC6Lw,Mattei,Mattei,54,rkt,0,rkt
-1pEqLDmVTqmfwfywlwL7wL,Jotaerre,Jotaerre,39,urbano latino,4,urbano
+1pEqLDmVTqmfwfywlwL7wL,Jotaerre,Jotaerre,39,urbano latino,4,trap
 7z3W8OunO3RH0quodR8Zsu,Saso,Saso,44,,9,
 3Y4UmopFbGuRYdtGEa5jDZ,Tomas Ballardo,Tomas Ballardo,50,corrido;corridos bélicos;electro corridos;corridos tumbados;sierreño,2,corridos
 0z4gvV4rjIZ9wHck67ucSV,Akon,Akon,84,,3,
@@ -643,7 +643,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 7E8yETzDbHYASNxtFQysf7,Dynasty,Dynasty,35,post-disco;funk,0,
 1jSjfSgDjedJdi5MoyRu78,Lary Over,Lary Over,67,trap latino;trap;dembow;reggaeton,9,trap;dembow
 0dXXFVCw0LKzmHFrTLUaQJ,Tito Torbellino Jr,Tito Torbellino Jr,59,corrido;corridos bélicos;corridos tumbados;sierreño,2,corridos
-33ScadVnbm2X8kkUqOkC6Z,Don Omar,Don Omar,85,reggaeton;urbano latino,0,reggaeton;urbano
+33ScadVnbm2X8kkUqOkC6Z,Don Omar,Don Omar,85,reggaeton;urbano latino,0,reggaeton;trap
 4xx3PjUWxXY0qEXUdDhrwx,Miss Bolivia,Miss Bolivia,36,electrocumbia,1,cumbia
 1H6X7yhnXZg73f9bssaj1Q,Judeline,Judeline,68,,10,
 1tuNNda2SSH3o4lUms5K6C,Sebastian Esquivel,Sebastian Esquivel,61,electro corridos;dembow belico;corrido;corridos bélicos;corridos tumbados,5,corridos;dembow
@@ -681,7 +681,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 7mWCSSOYqm4E9mB7V4ot6S,Miguel Bosé,Miguel Bosé,72,latin pop,9,latin
 1aWJsBQa67l72j1VT3D6Ow,Micro TDH,Micro TDH,70,,0,
 3HJq88k0us5XSJ4tD3J8RG,Jorsshh,Jorsshh,72,corrido;corridos tumbados;corridos bélicos,2,corridos
-1vrahybrKylgwkjhbmOz94,Yera,Yera,53,colombian pop;pop urbano,12,pop;urbano
+1vrahybrKylgwkjhbmOz94,Yera,Yera,53,colombian pop;pop urbano,12,pop;trap
 1gBHZ6j8W5Xs3t9gmvedJw,Oliva,Oliva,34,zouk,9,
 4uiEeT7dw0guTJ5CPMsX83,SHB,SHB,42,,3,
 2K5nCggbhSZ00YCYP5qkZS,Shiva,Shiva,77,italian trap;concerto,3,
@@ -727,7 +727,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 0Hkx0YcHHxDRRbH9WsSW0I,Marcianos Crew,Marcianos Crew,49,argentine trap;trap,1,trap
 1BLB1WyIlAsBD2l6bQOEtN,Clandestino,Clandestino,26,,0,
 55EA5tfk6pyYA7L6Hgb5Nr,Joel Elizalde,Joel Elizalde,44,banda;corrido;norteño,12,banda;corridos
-6hY8YED0fL89Il5yKkDhrm,SHARIF RAFAEL,SHARIF RAFAEL,48,urbano latino,0,urbano
+6hY8YED0fL89Il5yKkDhrm,SHARIF RAFAEL,SHARIF RAFAEL,48,urbano latino,0,trap
 0FwnPHExlRRxEZPLAi5tmG,JC Reyes,JC Reyes,79,,3,
 6Xgp2XMz1fhVYe7i6yNAax,Trippie Redd,Trippie Redd,82,melodic rap,9,hip hop
 7bwjYGg7DOoLpV3AFK2Jmz,Catalyna,Catalyna,32,trap latino,10,trap
@@ -752,7 +752,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 3oBZXbSQHXnxp9sWJcUT7j,Dylan Coronel,Dylan Coronel,36,corrido;corridos bélicos;corridos tumbados,5,corridos
 7IUaYyqcGB3aU2Tm4s5JY8,Zxmyr,Zxmyr,60,mexican hip hop;latin hip hop,5,trap
 2eEmsgWmUFMbtU7agJpnjY,Miranda!,Miranda!,76,latin pop,1,latin
-7A02nc5WKMBLqSKXxGZ4o8,Llane,Llane,44,pop urbano;colombian pop,1,urbano;pop
+7A02nc5WKMBLqSKXxGZ4o8,Llane,Llane,44,pop urbano;colombian pop,1,trap;pop
 0KKUc4amZyvswV2YL6WTar,Mariah Angeliq,Mariah Angeliq,61,trap latino;reggaeton,0,trap;reggaeton
 1YmUDtVMLCpjypyu8gNJRc,Carlos Osuna,Carlos Osuna,26,banda,12,banda
 7IiCm7VkqzW7vN0MY9AzHe,José Guicho,José Guicho,49,electro corridos;dembow belico;corrido;corridos bélicos;corridos tumbados,2,corridos;dembow
@@ -761,12 +761,12 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 10VBp06W8NIgMW4JruLCC4,Kidd Voodoo,Kidd Voodoo,76,reggaeton chileno;chilean trap,12,reggaeton;trap
 2IhhVEifV7ntdvp2YmMIzg,Reboll333,Reboll333,45,,0,
 1b94FVTCNMq9gU78ByW6iY,Close Counters,Close Counters,35,jazz house,3,
-5fJsY7afrbsyzJj9wdzJMh,"Tito ""El Bambino""","Tito ""El Bambino""",72,reggaeton;urbano latino,0,reggaeton;urbano
+5fJsY7afrbsyzJj9wdzJMh,"Tito ""El Bambino""","Tito ""El Bambino""",72,reggaeton;urbano latino,0,reggaeton;trap
 0K59Fm1y7s3j498ueS4qzY,Soledad,Soledad,62,folklore argentino;chamamé;latin folklore;latin folk,1,
 41qil2VaGbD194gaEcmmyx,Will Smith,Will Smith,67,,4,
 7a0XAaPaK2aDSqa8p3QnC7,Beéle,Beéle,89,latin afrobeats;reggaeton;pop urbano,4,afro;reggaeton
 2mO8bWmorA4kDukv9Xbioj,Valerio Gaytán,Valerio Gaytán,26,banda,12,banda
-3z26llYP0dIzgnmUp2vSAw,Chris Palace,Chris Palace,45,urbano latino,9,urbano
+3z26llYP0dIzgnmUp2vSAw,Chris Palace,Chris Palace,45,urbano latino,9,trap
 48R2gYdPKtfnfKAzhSVPUx,Migrantes,Migrantes,63,cumbia;cuarteto;rkt,3,cumbia;rkt
 51XrH5fQP2oIQynuKxSWcW,Sky Rompiendo,Sky Rompiendo,70,reggaeton,9,reggaeton
 5X4LWwbUFNzPkEas04uU82,DVBBS,DVBBS,59,edm;big room;electronica;slap house,1,electronic
@@ -805,7 +805,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 6n28c9qs9hNGriNa72b26u,PNAU,PNAU,71,,3,
 4fQPqLk2LwWrrc6OBMzXZj,Uriel Gaxiola,Uriel Gaxiola,57,electro corridos;dembow belico;corridos tumbados;corrido;corridos bélicos,2,corridos;dembow
 4sFGEHs1ufSWEmfpTDm3DM,Gustavo Palafox,Gustavo Palafox,41,corrido;banda;sierreño;corridos bélicos,2,corridos;banda
-5AS4y4rlmbUYDCdg35qmI9,paopao,paopao,58,urbano latino;latin r&b,4,urbano
+5AS4y4rlmbUYDCdg35qmI9,paopao,paopao,58,urbano latino;latin r&b,4,trap
 1ZPwILALmE6ggDHUlphThb,Jan Paul,Jan Paul,30,,0,
 4IC2X34tZmHG3VfTbpzvwL,Julianno Sosa,Julianno Sosa,67,chilean trap;reggaeton chileno;chilean mambo;mambo,1,trap;reggaeton
 0ElbMDEefrgdxl0geuDPHn,Esto es ¡FA!,Esto es ¡FA!,52,folklore argentino;chamamé;latin folklore,1,
@@ -845,7 +845,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 3hK6sVmdFt15ORCDg503Yp,Said Norzagaray,Said Norzagaray,39,corridos bélicos;corrido;corridos tumbados;electro corridos,2,corridos
 2zdRAu3PozCqPVqp8A4AtR,Joel Avila,Joel Avila,14,,12,
 5Ln6VxkwRDdAH40Lel6Yj8,Nidia Gongora,Nidia Gongora,48,electrocumbia,4,cumbia
-1vqR17Iv8VFdzure1TAXEq,LIT killah,LIT killah,71,argentine trap;trap latino;trap;urbano latino,1,trap;urbano
+1vqR17Iv8VFdzure1TAXEq,LIT killah,LIT killah,71,argentine trap;trap latino;trap;urbano latino,1,trap
 5F1lZDYOxfcsSMEHF28hdH,AXL,AXL,34,reggaeton mexa;electro corridos;dembow belico,12,reggaeton;corridos
 3ptY5WTxu77JpAQQnHyxEl,Yandar & Yostin,Yandar & Yostin,56,reggaeton,4,reggaeton
 4qDRNT8ldCfCjSp9lBzYC5,Joel De La P,Joel De La P,63,electro corridos;dembow belico;corrido;corridos bélicos;corridos tumbados,2,corridos;dembow
@@ -863,7 +863,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 46pWGuE3dSwY3bMMXGBvVS,Rema,Rema,78,afrobeats;afrobeat;afropop;afropiano,4,afro
 4grLz6b5fajQS4gF7fq3eg,Nixto,Nixto,2,,0,
 0NGAZxHanS9e0iNHpR8f2W,Alok,Alok,78,brazilian bass;electronic;slap house;electro house,2,electronic
-6ISKc7ev3V4EGnEagkXexc,ROBI,ROBI,54,urbano latino,10,urbano
+6ISKc7ev3V4EGnEagkXexc,ROBI,ROBI,54,urbano latino,10,trap
 5cTFbgW0bCLX6aqRgFGwso,Gallagher,Gallagher,33,italian trap;argentine trap,1,trap
 5cDfQlhT80II3f2ECXm6oA,Chanell,Chanell,51,trap latino,10,trap
 0b4EVanoJb8wkWF7QUA3uY,Sin Nombre,Sin Nombre,49,,4,
@@ -886,7 +886,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 1rTUwYS38LkQTlT2fhikch,Yung Beef,Yung Beef,78,neoperreo,3,experimental
 2rmkQLzj0k4nZdQehOUByO,Chino Pacas,Chino Pacas,78,corrido;corridos tumbados;corridos bélicos;música mexicana,2,corridos;banda
 5B2q0hvgjM3NbbKSmyylCQ,Wstuff,Wstuff,26,trap latino,3,trap
-4IMAo2UQchVFyPH24PAjUs,Jowell & Randy,Jowell & Randy,73,reggaeton;urbano latino,0,reggaeton;urbano
+4IMAo2UQchVFyPH24PAjUs,Jowell & Randy,Jowell & Randy,73,reggaeton;urbano latino,0,reggaeton;trap
 4ixNZvQuuzCDxBsxO9zE6L,Gonzy,Gonzy,62,,0,
 0akwFJC217vsXvFRi0Ns8v,Divino,Divino,42,,4,
 6jGMq4yGs7aQzuGsMgVgZR,Lil Tjay,Lil Tjay,77,brooklyn drill;melodic rap,3,hip hop
@@ -913,7 +913,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 0EocQPg9ycs21gcvaVm9hh,Joss Favela,Joss Favela,62,banda;norteño;sierreño;mariachi,12,banda;corridos
 7G1pOSE6cde2iXenQsMMe3,TEDDY-O,TEDDY-O,35,afro house;latin house,0,
 6v36LGGRNEleSpAd2zAeQL,Mks,Mks,36,argentine trap,1,trap
-2TQ4CGgxxCWHqa9yYIGDoU,Big Soto,Big Soto,63,urbano latino;trap latino,4,urbano;trap
+2TQ4CGgxxCWHqa9yYIGDoU,Big Soto,Big Soto,63,urbano latino;trap latino,4,trap
 7kjSuFGKhLm8b5qXoMhRkJ,Libianca,Libianca,63,afrobeats;afrobeat,9,afro
 7o7FisMfKqVaysG1CSIWrr,Cory,Cory,29,latin r&b,10,
 6cC67GpmPCjQjOYLpmOGhN,Dani Ribba,Dani Ribba,54,argentine trap,1,trap
@@ -948,8 +948,8 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 0EmeFodog0BfCgMzAIvKQp,Shakira,Shakira,88,latin pop,2,latin
 25uiPmTg16RbhZWAqwLBy5,Charli xcx,Charli xcx,84,hyperpop;art pop,8,hyperpop
 1FxPMQ9A0882eNDx3ZkD6B,La T y La M,La T y La M,73,cumbia;cuarteto;rkt;turreo,1,cumbia;rkt
-28gNT5KBp7IjEOQoevXf9N,Camilo,Camilo,80,colombian pop;pop urbano,9,pop;urbano
-7cYik4OyfBXYV5Z2TI7p90,FARIANA,FARIANA,55,dembow;urbano latino,0,dembow;urbano
+28gNT5KBp7IjEOQoevXf9N,Camilo,Camilo,80,colombian pop;pop urbano,9,pop;trap
+7cYik4OyfBXYV5Z2TI7p90,FARIANA,FARIANA,55,dembow;urbano latino,0,dembow;trap
 48vP5SxlTO6yOI7SLKIOQV,Obie Wanshot,Obie Wanshot,54,argentine trap;trap,1,trap
 6Ip8FS7vWT1uKkJSweANQK,Dave,Dave,81,grime;uk grime;uk drill;drill,1,drill
 4IndUOBCZYZg61557iq2A9,Maldy,Maldy,60,reggaeton,0,reggaeton
@@ -1006,7 +1006,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 7qGy8DUTeuBqoyN6gUf3gd,Mikey Barreneche,Mikey Barreneche,20,bass house,6,
 6JoYL9QYbdgPb6EuE5J2pC,Gerardo Coronel,Gerardo Coronel,67,banda;sierreño;corrido;norteño;sad sierreño,12,banda;corridos
 26ySWzeJU0Z7k3PIS1oMsB,Chencho,Chencho,23,reggaeton,0,reggaeton
-6XFITTl7cFTdopDY3lUdlY,J Alvarez,J Alvarez,72,reggaeton;urbano latino,0,reggaeton;urbano
+6XFITTl7cFTdopDY3lUdlY,J Alvarez,J Alvarez,72,reggaeton;urbano latino,0,reggaeton;trap
 2dlRleofo4idNGf8Ju9GTO,Travy Dev,Travy Dev,23,hyperpop,8,hyperpop
 6w9ToX5slZ4uIdmD17hJ3c,Bryant Myers,Bryant Myers,82,trap latino;reggaeton;urbano latino;trap,3,trap;reggaeton
 2OHKEe204spO7G7NcbeO2o,Ñejo,Ñejo,72,reggaeton,0,reggaeton
@@ -1043,7 +1043,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 6TASDj2ogOKQptnxgEvrcP,Jowell,Jowell,61,reggaeton,0,reggaeton
 4CksTDKT5UHEUxHEEu6sBH,Diem BB,Diem BB,23,,0,
 1mUJ5FdyqTx1UewE6z6imQ,Uziel Payan,Uziel Payan,40,corrido;corridos bélicos;sierreño,12,corridos
-65jIUih0ZeTUJhSTRuYxpi,Omy de Oro,Omy de Oro,54,trap latino;urbano latino,0,trap;urbano
+65jIUih0ZeTUJhSTRuYxpi,Omy de Oro,Omy de Oro,54,trap latino;urbano latino,0,trap
 7slfeZO9LsJbWgpkIoXBUJ,Ricky Martin,Ricky Martin,74,latin pop;latin,4,latin
 3j4R4YNDy0bqJ2io0ieObP,iseekarlo,iseekarlo,41,,8,
 1NV0aHpx1XWBilmEFTPOSz,Junior Osorio,Junior Osorio,2,,0,
@@ -1128,7 +1128,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 4D75GcNG95ebPtNvoNVXhz,AFROJACK,AFROJACK,74,edm;big room,2,electronic
 1ZMJSCQw8DIefcLb1FIpY0,Los Dareyes De La Sierra,Los Dareyes De La Sierra,80,corrido;corridos bélicos;corridos tumbados;sierreño;electro corridos;dembow belico;banda;música mexicana,2,corridos;dembow
 5y1mXGApE4lshXA10gQ0S3,Jovaan,Jovaan,52,trap latino,10,trap
-2QUvtLq6oQaX0LNsYY2fas,Cauty,Cauty,56,reggaeton;urbano latino,0,reggaeton;urbano
+2QUvtLq6oQaX0LNsYY2fas,Cauty,Cauty,56,reggaeton;urbano latino,0,reggaeton;trap
 0bUZrFj7rstq07E4iAJHgZ,KC Lights,KC Lights,50,house,6,
 55ru5B05MMBunM1tvH7Di6,Valentino Merlo,Valentino Merlo,63,cuarteto;cumbia,1,cumbia
 7yCGrS6Xh3UngvY6Ad5sMJ,LEGADO 7,LEGADO 7,68,corrido;corridos tumbados;corridos bélicos;sierreño;norteño;sad sierreño,2,corridos;banda
@@ -1169,7 +1169,7 @@ Id,Label,name,popularity,genres,modularity_class,genres_mapped
 70u0ytxL7TpF1Kdc2HFyM2,Alex Torres,Alex Torres,60,corrido;corridos bélicos;corridos tumbados;electro corridos,2,corridos
 2f0j8IhXgOli2Ub2amAiUZ,Midnvght,Midnvght,62,trap latino,0,trap
 1iblTHYdU8q8t8nH4sHl8A,Franux BB,Franux BB,43,rkt;turreo;argentine trap,1,rkt;trap
-5Y3MV9DZ0d87NnVm56qSY1,Tiago PZK,Tiago PZK,76,argentine trap;urbano latino,1,trap;urbano
+5Y3MV9DZ0d87NnVm56qSY1,Tiago PZK,Tiago PZK,76,argentine trap;urbano latino,1,trap
 4Wcscw7z9AAE6y7qWdIAin,Dylan Fuentes,Dylan Fuentes,49,latin afrobeats,4,afro
 2HPaUgqeutzr3jx5a9WyDV,PARTYNEXTDOOR,PARTYNEXTDOOR,85,dark r&b;r&b;trap soul,4,
 5CAruGjgds3QlF5ICtEnnc,Jairo Vera,Jairo Vera,68,reggaeton chileno;chilean mambo;chilean trap;mambo;guaracha,1,reggaeton;mambo

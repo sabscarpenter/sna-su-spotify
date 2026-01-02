@@ -1,0 +1,142 @@
+﻿Source,Target,Weight,Type
+Stati Uniti d'America,Stati Uniti d'America,1119,Undirected
+Messico,Messico,281,Undirected
+Colombia,Stati Uniti d'America,225,Undirected
+Argentina,Argentina,201,Undirected
+Argentina,Stati Uniti d'America,158,Undirected
+Messico,Stati Uniti d'America,149,Undirected
+Panama,Stati Uniti d'America,109,Undirected
+Porto Rico,Stati Uniti d'America,83,Undirected
+Spagna,Stati Uniti d'America,77,Undirected
+Repubblica Dominicana,Stati Uniti d'America,70,Undirected
+Colombia,Colombia,67,Undirected
+Argentina,Spagna,49,Undirected
+Cile,Stati Uniti d'America,35,Undirected
+Spagna,Spagna,29,Undirected
+Argentina,Cile,28,Undirected
+Stati Uniti d'America,Venezuela,27,Undirected
+Argentina,Colombia,26,Undirected
+Argentina,Messico,24,Undirected
+Colombia,Panama,21,Undirected
+Cuba,Stati Uniti d'America,20,Undirected
+Argentina,Belgio,20,Undirected
+Colombia,Messico,18,Undirected
+Colombia,Spagna,16,Undirected
+Cile,Cile,15,Undirected
+Canada,Stati Uniti d'America,15,Undirected
+Giamaica,Stati Uniti d'America,12,Undirected
+Regno Unito,Stati Uniti d'America,12,Undirected
+Messico,Spagna,11,Undirected
+Giappone,Stati Uniti d'America,11,Undirected
+Argentina,Brasile,10,Undirected
+Cuba,Messico,9,Undirected
+Nigeria,Stati Uniti d'America,8,Undirected
+Colombia,Porto Rico,8,Undirected
+Cile,Colombia,8,Undirected
+Brasile,Stati Uniti d'America,7,Undirected
+Panama,Panama,7,Undirected
+Argentina,Panama,7,Undirected
+Colombia,Repubblica Dominicana,7,Undirected
+Panama,Spagna,6,Undirected
+Argentina,Regno Unito,6,Undirected
+Cile,Spagna,6,Undirected
+Panama,Repubblica Dominicana,5,Undirected
+Stati Uniti d'America,Svezia,5,Undirected
+Francia,Stati Uniti d'America,5,Undirected
+Corea del Sud,Stati Uniti d'America,5,Undirected
+Italia,Stati Uniti d'America,5,Undirected
+Argentina,Uruguay,5,Undirected
+Marocco,Stati Uniti d'America,5,Undirected
+Germania,Stati Uniti d'America,5,Undirected
+Cile,Messico,5,Undirected
+Argentina,Venezuela,4,Undirected
+Argentina,Giappone,4,Undirected
+Australia,Stati Uniti d'America,4,Undirected
+Colombia,Venezuela,4,Undirected
+Argentina,Repubblica Dominicana,4,Undirected
+Messico,Repubblica Dominicana,4,Undirected
+Porto Rico,Spagna,3,Undirected
+Repubblica Dominicana,Spagna,3,Undirected
+Argentina,Italia,3,Undirected
+Norvegia,Stati Uniti d'America,3,Undirected
+Argentina,Giamaica,3,Undirected
+Panama,Porto Rico,3,Undirected
+Repubblica Dominicana,Repubblica Dominicana,3,Undirected
+Argentina,Guatemala,3,Undirected
+Colombia,Giamaica,3,Undirected
+Venezuela,Venezuela,3,Undirected
+Argentina,Cuba,3,Undirected
+Colombia,Paesi Bassi,3,Undirected
+Porto Rico,Repubblica Dominicana,2,Undirected
+Cile,Repubblica Dominicana,2,Undirected
+Argentina,Nigeria,2,Undirected
+Colombia,Nigeria,2,Undirected
+Portogallo,Stati Uniti d'America,2,Undirected
+Paesi Bassi,Stati Uniti d'America,2,Undirected
+Regno Unito,Spagna,2,Undirected
+Benin,Stati Uniti d'America,2,Undirected
+Canada,Canada,2,Undirected
+Guatemala,Panama,2,Undirected
+Messico,Paesi Bassi,2,Undirected
+Panama,Venezuela,2,Undirected
+Giappone,Messico,2,Undirected
+Guatemala,Stati Uniti d'America,2,Undirected
+Brasile,Spagna,2,Undirected
+India,Stati Uniti d'America,2,Undirected
+Panama,Svezia,2,Undirected
+Argentina,Merinidi,2,Undirected
+Regno dei Paesi Bassi,Stati Uniti d'America,1,Undirected
+Argentina,Paesi Bassi,1,Undirected
+Argentina,Porto Rico,1,Undirected
+Spagna,Svizzera,1,Undirected
+Colombia,Regno Unito,1,Undirected
+Irlanda,Stati Uniti d'America,1,Undirected
+Regno dei Paesi Bassi,Repubblica Dominicana,1,Undirected
+Finlandia,Stati Uniti d'America,1,Undirected
+Paesi Bassi,Repubblica Dominicana,1,Undirected
+Haiti,Stati Uniti d'America,1,Undirected
+Haiti,Regno Unito,1,Undirected
+Argentina,Francia,1,Undirected
+Germania,Repubblica Dominicana,1,Undirected
+Benin,Nigeria,1,Undirected
+Baliato di Guernsey,Stati Uniti d'America,1,Undirected
+Stati Uniti d'America,Suriname,1,Undirected
+Colombia,Guatemala,1,Undirected
+Canada,Repubblica Dominicana,1,Undirected
+Messico,Romania,1,Undirected
+Colombia,Francia,1,Undirected
+Porto Rico,Porto Rico,1,Undirected
+Italia,Regno Unito,1,Undirected
+Marocco,Spagna,1,Undirected
+Germania,Messico,1,Undirected
+Germania,Venezuela,1,Undirected
+Colombia,Italia,1,Undirected
+Argentina,Canada,1,Undirected
+Colombia,Iran,1,Undirected
+Colombia,Trinidad e Tobago,1,Undirected
+Brasile,Colombia,1,Undirected
+Colombia,Cuba,1,Undirected
+Giamaica,Spagna,1,Undirected
+Messico,Venezuela,1,Undirected
+Francia,Messico,1,Undirected
+Italia,Repubblica Democratica del Congo,1,Undirected
+Honduras,Stati Uniti d'America,1,Undirected
+Repubblica Democratica del Congo,Stati Uniti d'America,1,Undirected
+Australia,Regno Unito,1,Undirected
+Brasile,Cile,1,Undirected
+Nigeria,Nigeria,1,Undirected
+Benin,Giamaica,1,Undirected
+Giappone,Spagna,1,Undirected
+Brasile,Messico,1,Undirected
+Argentina,Bolivia,1,Undirected
+Regno Unito,Regno Unito,1,Undirected
+Australia,Francia,1,Undirected
+Kenya,Stati Uniti d'America,1,Undirected
+Brasile,Panama,1,Undirected
+Messico,Panama,1,Undirected
+Messico,Porto Rico,1,Undirected
+Colombia,India,1,Undirected
+Giamaica,Repubblica Dominicana,1,Undirected
+Giappone,Porto Rico,1,Undirected
+Canada,Italia,1,Undirected
+Arabia Saudita,Messico,1,Undirected
