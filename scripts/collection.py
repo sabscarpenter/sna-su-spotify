@@ -1,7 +1,11 @@
+# Funzioni per raccogliere dati da Spotify API
+
 import pandas as pd
 import time
 
+
 def get_artist_info(sp, artist_id):
+    """Recupera le informazioni base di un artista dato il suo ID Spotify."""
     artist = sp.artist(artist_id)
     return {
         'id': artist['id'],
@@ -10,11 +14,12 @@ def get_artist_info(sp, artist_id):
         'genres': artist['genres']
     }
 
+
 def get_collaborations(sp, artist_id):
+    """Trova tutte le collaborazioni di un artista analizzando i suoi album e singoli."""
     collaborations = []
     results = sp.artist_albums(artist_id, album_type='album,single', limit=50)
     albums = results['items']
-    
     seen_tracks = set()
 
     for album in albums:
@@ -28,5 +33,5 @@ def get_collaborations(sp, artist_id):
                         for j in range(i + 1, len(artists_in_track)):
                             collaborations.append((artists_in_track[i], artists_in_track[j]))
                 seen_tracks.add(track['id'])
-                
+
     return list(set(collaborations))

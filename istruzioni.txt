@@ -1,0 +1,172 @@
+================================================================================
+                    GUIDA ALL'ESECUZIONE DEL PROGETTO
+================================================================================
+
+PREREQUISITI
+- Python 3.8 o superiore installato
+- Gephi installato per la visualizzazione del grafo
+
+--------------------------------------------------------------------------------
+1. CREARE UN ACCOUNT SPOTIFY
+--------------------------------------------------------------------------------
+
+Se non hai gia un account Spotify:
+- Vai su https://www.spotify.com
+- Clicca su "Iscriviti" e segui la procedura di registrazione
+- Puoi usare un account gratuito, non serve Premium
+
+--------------------------------------------------------------------------------
+2. CREARE UN'APP SU SPOTIFY FOR DEVELOPERS
+--------------------------------------------------------------------------------
+
+- Vai su https://developer.spotify.com/dashboard
+- Accedi con le credenziali del tuo account Spotify
+- Clicca su "Create App"
+- Compila i campi:
+    - App name: un nome a tua scelta (es. "Progetto Social Network")
+    - App description: una breve descrizione
+    - Redirect URI: inserisci https://localhost:8888/callback
+    - Seleziona "Web API" come API da utilizzare
+- Accetta i termini e clicca su "Save"
+- Una volta creata l'app, clicca su "Settings"
+- Qui troverai il Client ID e il Client Secret (clicca "View client secret")
+
+--------------------------------------------------------------------------------
+3. CONFIGURARE LE CHIAVI API
+--------------------------------------------------------------------------------
+
+- Nella cartella principale del progetto, crea un file chiamato ".env"
+- Inserisci le seguenti righe sostituendo i valori con le tue chiavi:
+
+    SPOTIPY_CLIENT_ID='client id'
+    SPOTIPY_CLIENT_SECRET='client secret'
+
+- Salva il file
+
+--------------------------------------------------------------------------------
+4. CREARE E ATTIVARE L'AMBIENTE VIRTUALE
+--------------------------------------------------------------------------------
+
+Apri un terminale nella cartella del progetto ed esegui:
+
+Windows:
+    python -m venv venv
+    venv\Scripts\activate
+
+Mac/Linux:
+    python3 -m venv venv
+    source venv/bin/activate
+
+Quando l'ambiente e attivo, vedrai (venv) all'inizio della riga di comando.
+
+--------------------------------------------------------------------------------
+5. INSTALLARE LE DIPENDENZE
+--------------------------------------------------------------------------------
+
+Con l'ambiente virtuale attivo, esegui:
+
+    pip install -r requirements.txt
+
+--------------------------------------------------------------------------------
+6. ESEGUIRE LA RACCOLTA DATI
+--------------------------------------------------------------------------------
+
+Prima di tutto, genera il file seeds.txt con gli artisti iniziali:
+
+    python semi.py
+
+Poi avvia la raccolta delle collaborazioni musicali:
+
+    python main.py
+
+Lo script:
+- Legge gli artisti seed dal file seeds.txt
+- Raccoglie le collaborazioni per ogni artista
+- Salva i risultati in data/nodes.csv e data/edges.csv
+
+Nota: l'esecuzione puo richiedere diversi minuti a causa dei limiti API.
+
+--------------------------------------------------------------------------------
+7. IMPORTARE I DATI IN GEPHI
+--------------------------------------------------------------------------------
+
+- Apri Gephi
+- Vai su File > New Project
+- Vai su Data Laboratory
+- Clicca su Import Spreadsheet
+- Seleziona il file data/nodes.csv come tabella nodi (Undirected, Append to existing workspace)
+- Ripeti Import Spreadsheet per il file data/edges.csv come tabella archi (Undirected, Append to existing workspace)
+- Torna su Overview per visualizzare il grafo
+- Applica un algoritmo di layout (es. ForceAtlas2 con LinLog e Prevent Overlap)
+- Calcola le metriche di rete: vai su Statistics e calcola Modularity
+- Per colorare i nodi: vai su Appearance > Nodes > Partition
+- Seleziona "Modularity Class" come attributo
+- Clicca su Palette per aprire il menu palette
+- Clicca su "Generate" per creare una nuova palette
+- Scegli il numero di colori (uguale al numero di comunita)
+- Seleziona un preset
+- Clicca Generate per far comparire la palette
+- Clicca Ok per confermare la palette
+- Clicca Apply per applicare i colori al grafo
+- Esporta il grafo o le immagini secondo necessita
+
+--------------------------------------------------------------------------------
+8. GRAFICI
+--------------------------------------------------------------------------------
+
+HEATMAP (distribuzione generi per comunita)
+    Prima esegui il mapping dei generi:
+        python scripts/map.py
+    Poi genera la heatmap:
+        python scripts/heatmap.py
+    Il grafico viene salvato in report/heatmap.png
+
+SCATTERPLOT (correlazione popolarita tra artisti)
+    Esegui:
+        python scripts/scatterplot.py
+    Il grafico viene salvato in report/scatterplot.png
+
+RETE NAZIONALITA (collaborazioni tra nazioni)
+    Prima recupera le nazionalita degli artisti:
+        python scripts/nazionalita.py
+    Poi crea i file per Gephi:
+        python scripts/grafo-nazionalita.py
+    Infine importa in Gephi:
+        - Apri Gephi e crea un nuovo progetto
+        - Vai su Data Laboratory > Import Spreadsheet
+        - Importa data/grafo/nodes.csv come nodi (Undirected, Append to existing workspace)
+        - Importa data/grafo/edges.csv come archi (Undirected, Append to existing workspace)
+        - Torna su Overview
+        - Applica ForceAtlas2 con LinLog e Prevent Overlap
+        - Per colorare: vai su Appearance > Nodes > Partition
+        - Seleziona un attributo qualsiasi, crea una palette a scelta e clicca Apply
+
+--------------------------------------------------------------------------------
+9. NOTE
+--------------------------------------------------------------------------------
+
+CAMBIARE GLI ARTISTI INIZIALI
+    Per modificare gli artisti seed da cui parte la raccolta dati:
+    - Apri il file semi.py
+    - Modifica la lista "ids" con i nuovi ID Spotify
+    - Per ottenere l'ID di un artista:
+        1. Vai su Spotify e cerca l'artista
+        2. Clicca su Condividi > Copia link
+        3. L'ID e la stringa dopo "artist/" e prima di "?"
+           Esempio: https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X?si=abc
+           L'ID e: 4q3ewBCX7sLwd24euuV69X
+
+AUMENTARE LA PROFONDITA DELLA RICERCA
+    Per esplorare piu livelli di collaborazioni:
+    - Apri il file main.py
+    - Modifica il parametro MAX_DEPTH (default: 1)
+    - ATTENZIONE: aumentare la profondita incrementa esponenzialmente
+      il tempo di esecuzione e il numero di richieste API.
+      Non e consigliato superare il valore 2.
+
+DATI GIA CALCOLATI
+    Se non vuoi ricalcolare i dati da zero, nella cartella data/old
+    sono disponibili i dati gia elaborati e utilizzati nel progetto.
+    Puoi copiarli direttamente in data/new per utilizzarli.
+
+================================================================================

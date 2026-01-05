@@ -1,17 +1,21 @@
+# Script per creare uno scatterplot della popolarità tra artisti collaboranti
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
-# Configurazione colori Gephi
+# Configurazione colori
 gephi_cmap = LinearSegmentedColormap.from_list("gephi", ["#BF84F9", "#DC7AF2", "#FB71FF"])
 
-# Caricamento dati
-nodes_df = pd.read_csv('../data/pesata/nodes.csv')
-edges_df = pd.read_csv('../data/pesata/edges.csv')
+# Caricamento dati nodi e archi
+nodes_df = pd.read_csv('../data/new/grezzi/nodes.csv')
+edges_df = pd.read_csv('../data/new/grezzi/edges.csv')
 
+# Mappatura ID artista -> popolarità
 popularity_map = dict(zip(nodes_df['id'], nodes_df['popularity']))
 
+# Creazione dataset per il grafico
 edge_popularity = []
 for idx, row in edges_df.iterrows():
     source_id = row['source']
@@ -25,12 +29,12 @@ for idx, row in edges_df.iterrows():
 
 df_edges = pd.DataFrame(edge_popularity)
 
-# Creazione grafico
+# Creazione figura
 fig, ax = plt.subplots(figsize=(10, 10))
 fig.patch.set_facecolor('white')
 ax.set_facecolor('white')
 
-# Scatterplot - s è la dimensione del punto, c è il colore basato sul peso
+# Scatterplot con dimensione e colore basati sul peso
 scatter = ax.scatter(df_edges['source_popularity'], 
                      df_edges['target_popularity'],
                      alpha=0.4,
@@ -41,25 +45,21 @@ scatter = ax.scatter(df_edges['source_popularity'],
                      linewidths=0.5,
                      zorder=3)
 
-# Forza i limiti ESATTI a 0 e 100 per eliminare i margini bianchi
 ax.set_xlim(0, 100)
 ax.set_ylim(0, 100)
 
-# Diagonale di simmetria (da 0 a 100)
+# Diagonale di simmetria
 ax.plot([0, 100], [0, 100], 
          color='#A947C7', linestyle='--', alpha=0.6, linewidth=2, 
          label='Diagonale (simmetria)', zorder=2)
 
-# Formattazione assi
+# Formattazione
 ax.set_xlabel('Popolarità Artista Source', fontsize=12, fontweight='bold', labelpad=10)
 ax.set_ylabel('Popolarità Artista Target', fontsize=12, fontweight='bold', labelpad=10)
-ax.set_title('Scatterplot Popolarità tra Artisti', 
-             fontsize=16, fontweight='bold', pad=20)
-
+ax.set_title('Scatterplot Popolarità tra Artisti', fontsize=16, fontweight='bold', pad=20)
 ax.grid(True, alpha=0.3, linestyle='--', color='gray', zorder=1)
-ax.set_aspect('equal', adjustable='box') # Mantiene il quadrato perfetto
+ax.set_aspect('equal', adjustable='box')
 
-# Colorbar
 cbar = plt.colorbar(scatter, ax=ax, shrink=0.8)
 cbar.set_label('Numero di Collaborazioni', fontweight='bold')
 ax.legend(loc='upper left', fontsize=10)
@@ -68,6 +68,6 @@ plt.tight_layout()
 plt.savefig('../report/scatterplot.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# Correlazione
+# Calcolo e stampa correlazione
 correlation = df_edges['source_popularity'].corr(df_edges['target_popularity'])
-print(f"Correlazione popolarità: {correlation:.3f}")
+print(f"Correlazione popolarita: {correlation:.3f}")

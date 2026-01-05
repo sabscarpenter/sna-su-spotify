@@ -1,17 +1,21 @@
+# Script per recuperare le nazionalità degli artisti da Wikidata
+
 import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 import time
 
-# Caricamento dati
-df_original = pd.read_csv('../data/pesata/nodes.csv')
+# Caricamento dati artisti
+df_original = pd.read_csv('../data/new/grezzi/nodes.csv')
 artist_data = df_original[['id', 'name']].drop_duplicates().values.tolist()
 
-# Query Wikidata per nazionalità
+
 def get_artist_data_from_wikidata(spotify_id, artist_name):
+    """Cerca la nazionalità di un artista su Wikidata tramite Spotify ID o nome."""
     endpoint_url = "https://query.wikidata.org/sparql"
     sparql = SPARQLWrapper(endpoint_url, agent="MusicResearchProject/1.0")
     sparql.setReturnFormat(JSON)
     
+    # Query per cercare tramite Spotify ID
     query = f"""
     SELECT ?artistLabel ?countryLabel WHERE {{
       ?artist wdt:P1902 "{spotify_id}" .
@@ -34,10 +38,9 @@ def get_artist_data_from_wikidata(spotify_id, artist_name):
             data = results["results"]["bindings"][0]
             name = data.get("artistLabel", {}).get("value", "Unknown")
             country = data.get("countryLabel", {}).get("value", "Unknown")
-            
             return name, country
         
-        print(f"  ID non trovato per {artist_name}, provo con il nome...")
+        # Fallback: cerca per nome artista
         name_query = f"""
         SELECT ?artistLabel ?countryLabel WHERE {{
           ?artist rdfs:label "{artist_name}"@en .
@@ -65,23 +68,22 @@ def get_artist_data_from_wikidata(spotify_id, artist_name):
             data = name_results["results"]["bindings"][0]
             name = data.get("artistLabel", {}).get("value", artist_name)
             country = data.get("countryLabel", {}).get("value", "Unknown")
-            
             return name, country
         
         return artist_name, "Unknown"
         
     except Exception as e:
-        print(f"Errore per {artist_name} ({spotify_id}): {e}")
+        print(f"Errore per {artist_name}: {e}")
         return artist_name, "Error"
+
 
 # Elaborazione artisti
 risultati = []
 total = len(artist_data)
-unknown_country_count = 0
+unknown_count = 0
 error_count = 0
-fallback_count = 0
 
-print(f"Inizio recupero dati per {total} artisti...")
+print(f"Inizio recupero dati per {total} artisti")
 
 for i, (s_id, s_name) in enumerate(artist_data):
     name, country = get_artist_data_from_wikidata(s_id, s_name)
@@ -92,26 +94,17 @@ for i, (s_id, s_name) in enumerate(artist_data):
     })
     
     if country == "Unknown":
-        unknown_country_count += 1
+        unknown_count += 1
     if country == "Error":
         error_count += 1
-    if name != s_name and name != "Unknown" and name != "Error":
-        fallback_count += 1
     
-    if (i + 1) % 10 == 0:
-        print(f"Processati {i+1}/{total}... (Paese sconosciuto: {unknown_country_count}, Errors: {error_count}, Fallback: {fallback_count})")
+    if (i + 1) % 50 == 0:
+        print(f"Processati {i+1}/{total}")
 
     time.sleep(0.5)
 
 # Salvataggio risultati
 df_nationalities = pd.DataFrame(risultati)
-df_nationalities.to_csv('../data/artisti-e-nazionalita.csv', index=False)
+df_nationalities.to_csv('../data/new/nazioni/artisti-e-nazionalita.csv', index=False)
 
-print("\nFatto! File 'artisti-e-nazionalita.csv' creato con successo.")
-print(f"Totale artisti: {total}")
-print(f"Paesi trovati: {total - unknown_country_count - error_count}")
-print(f"Paesi non trovati: {unknown_country_count}")
-print(f"Ricerche con fallback (nome): {fallback_count}")
-print(f"Errori: {error_count}")
-print("\nPrime righe del risultato:")
-print(df_nationalities.head())
+print(f"Completato. Totale: {total}, trovati: {total - unknown_count - error_count}, non trovati: {unknown_count}, errori: {error_count}")
